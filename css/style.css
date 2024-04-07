@@ -28,8 +28,51 @@ body {
 
 html{
     scroll-behavior: smooth;
+    
 }
 
+.side-bar{
+    background-color: #1e293b;
+    /* background-color: white; */
+    width: 40%;
+    left: -40%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: left;
+}
+
+.side-bar.active{
+    left: 0;
+}
+.close-btn{
+    position: absolute;
+    color: black;
+    font-size: 25px;
+    right: 0px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.menu a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu a, menu a:visited{
+    color: white;
+}
+
+.menu-btn{
+    position: fixed;
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
 header,footer{
     position: sticky;
     background-color: #1e293b;
@@ -40,7 +83,20 @@ header,footer{
 header{
     top: 0;
 }
-
+header h1{
+    font-size: 40px;
+    text-align: center;
+}
+header h5{
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 28px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
 nav{
     background-color: white;
     padding: 0.5rem;
