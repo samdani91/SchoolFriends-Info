@@ -62,9 +62,12 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 .menu a, menu a:visited{
     color: white;
+    text-decoration: none;
 }
 
 .menu-btn{
@@ -75,6 +78,7 @@ html{
     margin-left: 10px;
     cursor: pointer;
 }
+
 header,footer{
     position: sticky;
     background-color: #1e293b;
@@ -212,7 +216,7 @@ footer{
     color: black;
     font-size: 0.95rem;
     margin-right: 150px;
-    width: 80%;
+    width: min(100%,270px);
     padding: 0.7rem;
     padding-left: 0.4rem;
     text-align: center;
@@ -243,6 +247,15 @@ footer{
     .card:last-child{
         order:-1;
     }
+    .side-bar{
+        width: 22%;
+        left: -22%;
+    }
+    #phone{
+        width: min(100%,200px);
+        font-size: 1rem;
+    }
+
 }
 
 @media screen and (min-width: 768px){
@@ -258,9 +271,15 @@ footer{
     .card p{
         margin-top: 0.25rem;
     }
-    #phone{
-        width: 30%;
+    .side-bar{
+        width: 22%;
+        left: -22;
     }
+    #phone{
+        width: min(100%,250px);
+        font-size: 1.05rem;
+    }
+
 }
 
 @media screen and (min-width: 992px){
@@ -276,8 +295,16 @@ footer{
     .card p{
         margin-top: -10px;
     }
+    .side-bar{
+        width: 15%;
+        left: -15;
+    }
     #phone{
-        width: 30%;
+        width: min(100%,300px);
+    }
+    #mail{
+        width: min(100%,300px);
+        font-size: 1.10rem;
     }
 
 }
@@ -293,8 +320,16 @@ footer{
     .card p{
         margin-top: -10px;
     }
+    .side-bar{
+        width: 20%;
+        left: -20%;
+    }
     #phone{
-        width: 30%;
+        width: min(100%,350px);
+    }
+    #mail{
+        width: min(100%,350px);
+        font-size: 1.25rem;
     }
 
 }
