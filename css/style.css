@@ -156,6 +156,9 @@ footer{
     text-align: center;
 }
 
+.card:target{
+    border: 3px solid #1e293b;
+}
 .contact a{
     display: inline-flex;
     justify-content: center;
