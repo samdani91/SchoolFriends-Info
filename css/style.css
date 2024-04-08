@@ -99,22 +99,6 @@ header h5{
     padding-bottom: 0.5rem;
     letter-spacing: 1px;
 }
-nav{
-    background-color: white;
-    padding: 0.5rem;
-    border-bottom: 2px solid black;
-    font-weight: bolder;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-nav a, nav a:visited{
-    color: black;
-}
-
-nav a:hover, nav a:focus{
-    color: hsla(0, 0%, 20%, 0.6);
-}
 
 input[type=text]{
     position: sticky;
@@ -183,11 +167,70 @@ footer{
     margin: 10px 15px 30px 15px;
     opacity: 1;
 }
+
 .contact a:hover{
     background-color: #475569;
     color: #cbd5e1;
     box-shadow: 0 0 20px  #475569;
 }
+
+#wp, #gmail{
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    margin: 10px 15px 30px 15px;
+    opacity: 1;
+}
+
+
+#phone{
+    position: absolute;
+    background-color: #cbd5e1;
+    color: black;
+    white-space: nowrap;
+    width: 60%;
+    text-align: center;
+    padding: 0.5rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 20px  #475569;
+    visibility: hidden;
+}
+
+#mail{
+    position:absolute;
+    background-color: #cbd5e1;
+    color: black;
+    font-size: 0.95rem;
+    margin-right: 150px;
+    width: 80%;
+    padding: 0.7rem;
+    padding-left: 0.4rem;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 20px  #475569;
+    visibility: hidden;
+}
+
+
+#wp:hover #phone{
+    visibility: visible;
+}
+
+#gmail:hover #mail{
+    visibility: visible;
+}
+
 @media screen and (min-width: 576px){
     main{
         justify-content: center;
@@ -215,6 +258,9 @@ footer{
     .card p{
         margin-top: 0.25rem;
     }
+    #phone{
+        width: 30%;
+    }
 }
 
 @media screen and (min-width: 992px){
@@ -230,6 +276,9 @@ footer{
     .card p{
         margin-top: -10px;
     }
+    #phone{
+        width: 30%;
+    }
 
 }
 
@@ -243,6 +292,9 @@ footer{
     }
     .card p{
         margin-top: -10px;
+    }
+    #phone{
+        width: 30%;
     }
 
 }
